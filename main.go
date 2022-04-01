@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-	ints := []int{3, 2, 1}
+	ints := []int{3, 2, 1, 7, 4, 10, 6}
 	stringss := []string{"c", "b", "a"}
 
-	fmt.Println("Sorting with BubbleSort....")
+	/*fmt.Println("Sorting with BubbleSort....")
 	ints = sort.Bubble(ints)
 	stringss = sort.Bubble(stringss)
 	fmt.Println(ints)
@@ -18,6 +18,12 @@ func main() {
 	fmt.Println("Sorting with CombSort....")
 	ints = sort.CombSort(ints)
 	stringss = sort.CombSort(stringss)
+	fmt.Println(ints)
+	fmt.Println(stringss)*/
+
+	fmt.Println("Sorting with QuickSort....")
+	ints = sort.QuickSort(ints)
+	stringss = sort.QuickSort(stringss)
 	fmt.Println(ints)
 	fmt.Println(stringss)
 }
