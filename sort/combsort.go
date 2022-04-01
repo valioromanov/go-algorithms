@@ -1,5 +1,6 @@
 package sort
 
+//decrese the gap by 1.3
 func goToNextGap(gap int) int {
 	gap = (gap * 10) / 13
 	if gap < 1 {
@@ -9,6 +10,7 @@ func goToNextGap(gap int) int {
 	return gap
 }
 
+//this function sort the slice with CombSort algorithm
 func CombSort[K int | string](arr []K) []K {
 
 	arrLen := len(arr)
