@@ -11,7 +11,7 @@ func goToNextGap(gap int) int {
 }
 
 //this function sort the slice with CombSort algorithm
-func CombSort[K int | string](arr []K) []K {
+func CombSort(arr []int) []int {
 
 	arrLen := len(arr)
 	gap := arrLen

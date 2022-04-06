@@ -1,13 +1,12 @@
 package main
 
 import (
-	"algorithms/sort"
+	"alhorithms/sort"
 	"fmt"
 )
 
 func main() {
 	ints := []int{3, 2, 1, 7, 4, 10, 6}
-	stringss := []string{"c", "b", "a"}
 
 	/*fmt.Println("Sorting with BubbleSort....")
 	ints = sort.Bubble(ints)
@@ -21,9 +20,11 @@ func main() {
 	fmt.Println(ints)
 	fmt.Println(stringss)*/
 
-	fmt.Println("Sorting with QuickSort....")
+	/*fmt.Println("Sorting with QuickSort....")
 	ints = sort.QuickSort(ints)
-	stringss = sort.QuickSort(stringss)
+	fmt.Println(ints)*/
+
+	fmt.Println("Sorting with insertion sort")
+	ints = sort.InsertionSort(ints)
 	fmt.Println(ints)
-	fmt.Println(stringss)
 }
