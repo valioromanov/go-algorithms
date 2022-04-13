@@ -1,12 +1,13 @@
 package main
 
 import (
+	"alhorithms/search"
 	"alhorithms/sort"
 	"fmt"
 )
 
 func main() {
-	ints := []int{3, 2, 1, 7, 4, 10, 6, 5}
+	ints := []int{3, 2, 1, 7, 4, 10, 6, 8, 5, 9}
 
 	/*fmt.Println("Sorting with BubbleSort....")
 	ints = sort.Bubble(ints)
@@ -35,4 +36,6 @@ func main() {
 	fmt.Println("Sorting with Selection sort second variant")
 	ints = sort.SelectionSort(ints)
 	fmt.Println(ints)
+
+	fmt.Println(search.BinarySearch(ints, 11))
 }
