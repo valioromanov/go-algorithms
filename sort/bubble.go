@@ -11,3 +11,19 @@ func Bubble(arr []int) []int {
 	}
 	return arr
 }
+
+func BubbleSort(arr []int) []int {
+	swapped := true
+
+	for swapped {
+		swapped = false
+		for i := 0; i < len(arr)-1; i++ {
+			if arr[i] > arr[i+1] {
+				swapped = true
+				arr[i], arr[i+1] = arr[i+1], arr[i]
+			}
+		}
+	}
+
+	return arr
+}
