@@ -3,7 +3,9 @@ package main
 import (
 	"alhorithms/search"
 	"alhorithms/sort"
+	"alhorithms/tree"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -38,4 +40,23 @@ func main() {
 	fmt.Println(ints)
 
 	fmt.Println(search.BinarySearch(ints, 11))
+
+	treeOne := &tree.BinaryTree{}
+	treeOne.InsertEl(100).
+		InsertEl(-20).
+		InsertEl(-50).
+		InsertEl(-15).
+		InsertEl(-60).
+		InsertEl(50).
+		InsertEl(60).
+		InsertEl(55).
+		InsertEl(85).
+		InsertEl(15).
+		InsertEl(5).
+		InsertEl(-10).
+		InsertEl(150).
+		InsertEl(145).
+		InsertEl(160).
+		InsertEl(165)
+	tree.PrintTree(os.Stdout, treeOne.Root, 0, 'M')
 }
