@@ -1,23 +1,18 @@
 package main
 
 import (
-	"alhorithms/search"
-	"alhorithms/sort"
 	"alhorithms/tree"
-	"fmt"
 	"os"
 )
 
 func main() {
-	ints := []int{3, 2, 1, 7, 4, 10, 6, 8, 5, 9}
+	//ints := []int{3, 2, 1, 7, 4, 10, 6, 8, 5, 9}
 
-	/*fmt.Println("Sorting with BubbleSort....")
-	ints = sort.Bubble(ints)
-	stringss = sort.Bubble(stringss)
-	fmt.Println(ints)
-	fmt.Println(stringss)
+	// fmt.Println("Sorting with BubbleSort....")
+	// ints = sort.BubbleSort(ints)
+	// fmt.Println(ints)
 
-	fmt.Println("Sorting with CombSort....")
+	/*fmt.Println("Sorting with CombSort....")
 	ints = sort.CombSort(ints)
 	stringss = sort.CombSort(stringss)
 	fmt.Println(ints)
@@ -35,11 +30,11 @@ func main() {
 	ints = sort.BubbleSort(ints)
 	fmt.Println(ints)*/
 
-	fmt.Println("Sorting with Selection sort second variant")
-	ints = sort.SelectionSort(ints)
-	fmt.Println(ints)
+	// fmt.Println("Sorting with Selection sort second variant")
+	// ints = sort.SelectionSort(ints)
+	// fmt.Println(ints)
 
-	fmt.Println(search.BinarySearch(ints, 11))
+	// fmt.Println(search.BinarySearch(ints, 11))
 
 	treeOne := &tree.BinaryTree{}
 	treeOne.InsertEl(100).
